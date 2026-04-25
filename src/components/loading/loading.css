@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    
+}
+
+.loading h2 {
+    font-size: 2rem;
+    color: #ffffffab;
+    font-family: 'Audiowide', cursive;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #9B8BFF;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

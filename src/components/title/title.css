@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.description h1 {
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 30px;
+    border-bottom: #7B68EE 2px solid;
+}
+
+.description p {
+    font-family: 'Quicksands', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    max-width: 600px;
+}

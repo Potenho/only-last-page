@@ -1,0 +1,134 @@
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: transparent;
+}
+
+.search-input {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-type {
+    width: 100%;
+    padding: 15px 60px 15px 20px;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    background: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 12px;
+    color: #fff;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.input-type:focus {
+    border-color: #7B68EE;
+    box-shadow: 0 0 10px rgba(123, 104, 238, 0.3);
+    background: #222;
+}
+
+.input-type::placeholder {
+    color: #666;
+}
+
+.search-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-button button {
+    background: transparent;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.search-button button:hover {
+    transform: scale(1.1);
+}
+
+.search-button button:active {
+    transform: scale(0.95);
+}
+
+.search-button svg {
+    font-size: 20px;
+    color: #7B68EE;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.search-button button:hover svg {
+    color: #9B8BFF;
+}
+
+.search-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #7B68EE;
+    text-align: center;
+    padding: 10px 20px;
+    background: rgba(123, 104, 238, 0.1);
+    border-radius: 8px;
+    border-left: 3px solid #7B68EE;
+    max-width: 100%;
+    word-wrap: break-word;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .search {
+        padding: 15px;
+        margin: 20px auto;
+    }
+    
+    .input-type {
+        padding: 12px 55px 12px 16px;
+        font-size: 16px;
+    }
+    
+    .search-button button {
+        padding: 6px 10px;
+    }
+    
+    .search-button svg {
+        font-size: 18px;
+    }
+    
+    .search-title {
+        font-size: 14px;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.search-title {
+    animation: fadeIn 0.5s ease-out;
+}
